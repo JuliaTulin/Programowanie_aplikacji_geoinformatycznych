@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "~=8.0"
+pandas = "==2.2.*"
+requests = ">2.25"
+
+fleet = {path = "./fleet", editable = true}
+logs = {path = "./logs", editable = true}
+operations = {path = "./operations", editable = true}
+personnel = {path = "./personnel", editable = true}
+cli = {path = "./cli", editable = true}
+tests = {path = "./tests", editable = true}
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
